@@ -25,8 +25,11 @@ fetch("https://jsonplaceholder.typicode.com/users")
 
 
 searchInput.addEventListener("input", e => {
-    const value = e.target.value
+    const value = e.target.value.toLowerCase()
     users.forEach(user => {
-        const isVisible = user.name.includes(value) || user.email.includes(value)
+        const isVisible = user.name.toLowerCase().includes(value) || user.email.toLowerCase().includes(value)
+        // the toggle function takes ("className", "true or false variable") 2 parameters
+        user.element.classList.toggle("hide", !isVisible)
     })
+    console.log(users)
 })
