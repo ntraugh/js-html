@@ -14,10 +14,57 @@
 
 .nav-link {
     margin-left: 1rem;
+    font-size: 1.25rem;
 }
 
-.main {
+.hero {
     display: flex;
     justify-content: space-between;
     padding: 4rem;
+    height: 80vh;
+    background-color: cadetblue;
+
+}
+
+.heading-title {
+    font-size: 4rem;
+    flex-wrap: wrap;
+}
+
+
+.paragraph {
+    font-size: 3rem;
+    padding-top: 4rem;
+    text-align: center;
+
+}
+
+.content {
+    text-align: center;
+
+}
+
+.btn {
+    padding: 2rem;
+    border-radius: .5rem;
+    margin-top: 4rem;
+    border: none;
+    cursor: pointer;
+    
+}
+
+
+
+
+
+@media screen and (max-width: 760px) {
+    .hero {
+        display: block;
+    }
+    .right {
+        padding-top: 2rem;
+    }
+    .heading-title {
+        font-size: 3rem;
+    }
 }
