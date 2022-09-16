@@ -3,10 +3,16 @@ const formEl = document.querySelector("form")
 const handleSubmit = (e) => {
     e.preventDefault()
 
+    localStorage.getItem("user")
+
     const email = document.getElementById("email").value
-    console.log(email)
     const password = document.getElementById("password").value
-    console.log(password)
+    const background = document.querySelector("fullscreen")
+
+    
+
+    localStorage.setItem("user", JSON.stringify(email))
+  
 }
 
 
