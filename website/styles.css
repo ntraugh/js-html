@@ -21,7 +21,7 @@
     display: flex;
     justify-content: space-between;
     padding: 4rem;
-    height: 80vh;
+    height: 60vh;
     background-color: cadetblue;
 
 }
@@ -44,27 +44,63 @@
 
 }
 
+.left {
+    text-align: center;
+    margin: auto;
+}
+
 .btn {
     padding: 2rem;
     border-radius: .5rem;
     margin-top: 4rem;
     border: none;
     cursor: pointer;
-    
+
+}
+
+.users-heading {
+    text-align: center;
+    padding-top: 3rem;
+    font-size: 4rem;
+
 }
 
 
 
 
 
-@media screen and (max-width: 760px) {
+
+
+@media screen and (max-width: 1380px) {
     .hero {
         display: block;
+        /* padding-top: 10px; */
     }
-    .right {
-        padding-top: 2rem;
+    .paragraph{
+        padding-top: 1rem;
     }
     .heading-title {
         font-size: 3rem;
+    }
+    .btn {
+        margin-top: 2REM;
+    }
+}
+
+@media screen and (max-width: 760px){
+    .hero {
+        display: block;
+        padding-top: 50px;
+    }
+    .paragraph{
+        padding-top: 1rem;
+        font-size: 24px;
+    }
+    .heading-title {
+        font-size: 28px;
+    }
+    .btn {
+        margin-top: 20px;
+
     }
 }
