@@ -1,4 +1,5 @@
-const btn = document.getElementsByClassName("btn")
+const products = document.getElementById("products")
+const trial = document.getElementById("trial")
 
 const handleClick = () => {
     console.log("clicked")
@@ -7,4 +8,4 @@ const handleClick = () => {
 
 
 
-btn.addEventListener("click", handleClick)
+products.addEventListener("click", handleClick)
